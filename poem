@@ -1,0 +1,57 @@
+<html>
+	<head>
+		
+	<title>mulberry fields</title>
+		<style type="text/css">
+		*{font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			color:darkorange; background:#322C2C;}
+			.tom{color:aliceblue;}	
+			.dog{color:aqua}
+			ul,li,a{margin: 0px; padding:0px;text-decoration: none;
+		</style>
+	</head>
+	<body>
+<div id="nav">
+	<ul>
+		<li><a href="navigation.html"><font size="50"color=#D0C9C9>back</font></a></li>
+<center>
+	<p>&#120139;&#120153;&#8519;&#120170; <b>thought</b> </p>
+	<hr width="1px" size="500px"/>
+	<p>&#9672;the field was wasting&#9672;</p>
+
+	<p><del>and</del></p>
+	<p>so</p>
+	<p>&#8595;</p>
+	<p>&#9672;they <b>gathered</b> the marker rocks &#9672;
+	<p>a&nbsp;n&nbsp;d&nbsp;</p>
+	<p>&#1044;stones&#1044;</p>
+	<p>a</p>
+	<p>n</p>
+	<p>d</p>
+
+	<p class="tom">&#9672;<b>piled</b> them into a barn&#9672;</p>
+	<p>&#8743</p>
+	
+	<p>&#9672;<b class="dog">they say</b>&#9672;</p>
+	<p>&#8744</p>
+	<p>&#9672;<del>that</del> the rocks were shaped&#9672;</p>
+
+	<p>&#9672;some of them <b>scratched</b> with triangles and other forms &#9672;</p>
+
+	<p>&#9672;they must have been trying to invent some new language&#9672;</p>
+	<p>&#8711</p>
+	<p><b>they say</b></p>
+	<p>&#916</p>
+
+	<p>&#9672;the rocks went to <b>build</b> that wall there guarding the manor&#9672;</p>
+	<p><del>and</del></p>
+	<p>&amp;</p>
+	<p>&#9672;some few <strong>were used for</strong> the state house&#9672;</p>
+	<p>&#9672;crops <b>refused</b> to grow&#9672;</p>
+	<a href="https://www.poetryfoundation.org/poems/46671/mulberry-fields">
+	<p>.</p><p>.</p><p>.</P></a>
+
+</center>
+	</body>
+	
+</html>
