@@ -1,0 +1,73 @@
+# web-art<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+	<style>
+		ul,li,a{margin: 0px; padding:0px;text-decoration: none;</style>
+</head>
+<body>
+	<div id="nav">
+	<ul>
+		<li><a href="navigation.html"><font size="50" color= #274A66>back</font></a></li>
+		<button id="button"><font size="50" color= #5F1A1B>pass me</font></button>
+</body>
+<script>
+window.AudioContext = window.AudioContext || window.webkitAudioContext;
+(function () {
+    if (!window.AudioContext) { 
+        alert('当前浏览器不支持Web Audio API');
+        return;
+    }
+    
+    
+    var eleButton = document.getElementById('button');
+    
+    
+    var audioCtx = new AudioContext();
+    
+    
+    var arrFrequency = [196.00, 220.00, 246.94, 261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25, 587.33, 659.25, 698.46, 783.99, 880.00, 987.77, 1046.50];
+    
+    
+    var start = 0, direction = 1;
+    
+    
+    eleButton.addEventListener('mouseenter', function () {
+        
+        var frequency = arrFrequency[start];
+        
+        if (!frequency) {
+            direction = -1 * direction;
+            start = start + 2 * direction;
+            frequency = arrFrequency[start];
+        }
+        
+        start = start + direction;
+        
+        
+        var oscillator = audioCtx.createOscillator();
+        
+        var gainNode = audioCtx.createGain();
+        
+        oscillator.connect(gainNode);
+        
+        gainNode.connect(audioCtx.destination);
+        
+        oscillator.type = 'sine';
+        
+        oscillator.frequency.value = frequency;
+        
+        gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+        
+        gainNode.gain.linearRampToValueAtTime(1, audioCtx.currentTime + 0.01);
+        
+        oscillator.start(audioCtx.currentTime);
+        
+        gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1);
+        
+        oscillator.stop(audioCtx.currentTime + 1);
+    });
+})();
+</script>
+</html>
